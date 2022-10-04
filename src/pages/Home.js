@@ -1,7 +1,13 @@
+import section1 from "../assets/section1.png"
+import Gallery from "../components/Gallery"
+import "../styles/Home.css"
+
+
 function Home() {
   return (
     <div>
-      <h1> Page d'accueil 🏠</h1>
+      <img src={section1} alt='section 1' className='section' />
+      <Gallery/>
     </div>
   )
 }

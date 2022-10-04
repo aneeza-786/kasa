@@ -1,7 +1,11 @@
+import section2 from "../assets/section2.png";
+import Collapse from "../components/Collapse";
+
 function About() {
     return (
         <div>
-            <h1>A propos</h1>
+            <img src={section2} alt='section 2' className='section' />
+            <Collapse/>
         </div>
     )
 }

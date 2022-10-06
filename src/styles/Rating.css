@@ -1,0 +1,9 @@
+.icon-rating {
+    height: 30px;
+}
+
+@media (max-width:900px) {
+    .icon-rating {
+        height: 17px;
+    }
+}

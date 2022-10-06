@@ -1,5 +1,6 @@
 import redstar from "../assets/redStar.svg";
 import greystar from "../assets/greyStar.svg";
+import "../styles/Rating.css"
 
 function Rating({rating}) {
     const stars = [1,2,3,4,5];

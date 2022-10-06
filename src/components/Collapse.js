@@ -5,7 +5,7 @@ import "../styles/About.css";
 
 console.log (categories)
 
-function Collapse(props) {
+function Collapse() {
     const config = {duration:200}
     const { getCollapseProps, getToggleProps, isExpanded } = useCollapse(config);
 return (
@@ -17,9 +17,9 @@ return (
                 <p className='title-collapse'>{category.title}</p>
                 <div className='icon'><i className={'fa-solid fa-chevron-' + (isExpanded ? 'up' : 'down')}></i></div>   
             </div>
-            <p {...getCollapseProps()} className="content-collapse">
-                {category.content}
-            </p>
+            <div {...getCollapseProps()}>
+                <p className="content-collapse"> {category.content} </p>
+            </div>
         </article>)
         })}
     </section>

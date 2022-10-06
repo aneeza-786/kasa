@@ -13,8 +13,8 @@
 .content-collapse {
     color: #FF6060;
     background-color: #F6F6F6;
-    padding: 20px;
     margin: 0;
+    padding: 20px;
 }
 
 .categories {
@@ -26,12 +26,10 @@
     flex-direction: column;
 }
 
-.icon {
-    padding-right: 10px;
+.category {
+    margin-bottom: 20px;
 }
 
-@media (max-height: 1400px) {
-    .categories {
-        margin-bottom: 65%;
-    }
+.icon {
+    padding-right: 10px;
 }

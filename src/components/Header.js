@@ -8,7 +8,7 @@ function Header() {
             <nav className='header-nav'>
                 <img src={logo} alt='logo Kasa' className='kasa-logo' />
                 <ul className='ul-nav'>
-                    <li className='li-nav'><Link to="" className='link'>Accueil</Link></li>
+                    <li className='li-nav'><Link to="/" className='link'>Accueil</Link></li>
                     <li className='li-nav'><Link to="/about" className='link'>A propos</Link></li>
                 </ul>    
             </nav>

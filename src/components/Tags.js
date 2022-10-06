@@ -1,3 +1,5 @@
+import "../styles/Tags.css";
+
 function Tags({getTag}) {
     return (
         <div className="tag">

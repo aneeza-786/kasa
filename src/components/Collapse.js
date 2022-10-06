@@ -6,7 +6,7 @@ import "../styles/About.css";
 console.log (categories)
 
 function Collapse(props) {
-    const config = {duration:800}
+    const config = {duration:200}
     const { getCollapseProps, getToggleProps, isExpanded } = useCollapse(config);
 return (
     <section className='categories'>

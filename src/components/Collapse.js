@@ -1,29 +1,20 @@
-import useCollapse from 'react-collapsed';
-import categories from"../data/aboutData.json"
+import React from "react";
 import "../styles/About.css";
 
 
-console.log (categories)
-
-function Collapse() {
-    const config = {duration:200}
-    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse(config);
-return (
-    <section className='categories'>
-    {categories.map ((category) => {
+const Collapse = ({index, title, content}) => {
+    const [isCollapsed , setIsCollapsed] = React.useState(title);
         return(
-        <article className="category" key={category.id}>
-            <div className="header-collapse" {...getToggleProps()}>
-                <p className='title-collapse'>{category.title}</p>
-                <div className='icon'><i className={'fa-solid fa-chevron-' + (isExpanded ? 'up' : 'down')}></i></div>   
+        <article className="category">
+            <div className="header-collapse" onClick={() => setIsCollapsed(!isCollapsed)}>
+                <p className='title-collapse'>{title}</p>
+                <div className='icon'><i className={'fa-solid fa-chevron-' + (isCollapsed ? 'down' : 'up')}></i></div>   
             </div>
-            <div {...getCollapseProps()}>
-                <p className="content-collapse"> {category.content} </p>
+            <div className={`content-collapse ${isCollapsed ? 'collapsed' : 'expanded'}`}> 
+                {Array.isArray(content)?
+                content.map((value, index) => <p className="value" key={index}>{value}</p>) : content}
             </div>
-        </article>)
-        })}
-    </section>
-    );
-}
+        </article>);
+        };
 
 export default Collapse;

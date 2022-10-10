@@ -4,6 +4,7 @@ import Slider from "../components/Slider";
 import Tags from "../components/Tags";
 import Rating from "../components/Rating";
 import "../styles/Accomodation.css";
+import Collapse from "../components/Collapse";
 
 function Accomodation() {
     const {productId} = useParams();
@@ -32,6 +33,10 @@ function Accomodation() {
                     <Rating rating={rating} />
                 </div>
             </div> 
+            <div className="collapse-acco">
+                <Collapse title="Description" content={product.description} className="collapse-acco1" />
+                <Collapse title="Equipements" content={product.equipments} className="collapse-acco1" />
+            </div>
         </section>
     )
 }

@@ -17,6 +17,14 @@
     padding: 20px;
 }
 
+.content-collapse.collapsed {
+    display: none;
+}
+
+.content-collapse.expanded {
+    display: block;
+}
+
 .categories {
     padding-top: 40px;
     width: 80%;
@@ -32,4 +40,8 @@
 
 .icon {
     padding-right: 10px;
+}
+
+.value {
+    margin: 0;
 }

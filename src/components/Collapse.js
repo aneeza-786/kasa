@@ -3,7 +3,7 @@ import "../styles/About.css";
 
 
 const Collapse = ({index, title, content}) => {
-    const [isCollapsed , setIsCollapsed] = React.useState(title);
+    const [isCollapsed , setIsCollapsed] = React.useState(true);
         return(
         <article className="category">
             <div className="header-collapse" onClick={() => setIsCollapsed(!isCollapsed)}>

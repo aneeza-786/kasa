@@ -19,6 +19,7 @@ function App() {
                         <Route path="about" element={<About />} />
                         <Route path="products/:productId" element={<Accomodation />} />
                         <Route path="*" element={<Error />} />
+                        <Route path="products/*" element={<Error/>} />
                     </Routes>
                     <Footer/>
                 </Router>

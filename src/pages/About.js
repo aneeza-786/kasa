@@ -4,7 +4,7 @@ import categories from "../data/aboutData.json";
 
 function About() {
     return (
-        <div>
+        <div className="about">
             <img src={section2} alt='section 2' className='section' />
             <section className="categories">
                 <CollapseAbout />

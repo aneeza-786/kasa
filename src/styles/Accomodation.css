@@ -1,6 +1,7 @@
 .accomodation {
     margin: 0 5%;
     color: #FF6060;
+    min-height: calc(100vh - 200px);
 }
 
 .accomodation2 {

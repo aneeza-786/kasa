@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import products from "../data/logements.json";
 import Slider from "../components/Slider";
 import Tags from "../components/Tags";
@@ -9,6 +9,9 @@ import Collapse from "../components/Collapse";
 function Accomodation() {
     const {productId} = useParams();
     const product = products.find((product) => product.id === productId);
+    if (!product) {
+        return <Navigate to= "/*" />
+    }
     const { title, location, pictures, rating } = product;
     return(
         <section className="accomodation">

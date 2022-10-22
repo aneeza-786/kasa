@@ -1,6 +1,7 @@
 .error {
     text-align: center;
     color: #FF6060;
+    min-height: calc(100vh - 200px);
 }
 
 .error-nmbr {

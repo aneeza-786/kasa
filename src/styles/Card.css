@@ -32,3 +32,7 @@
     width: 95%;
     margin: 0 auto;
 }
+
+.card :hover {
+    transform: scale(1.03);
+}
